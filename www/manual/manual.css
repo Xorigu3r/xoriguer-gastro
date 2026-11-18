@@ -1,0 +1,9 @@
+@font-face { font-family: 'Montserrat'; font-weight: 800; src: url('../fonts/Montserrat-ExtraBold.ttf'); }
+body { background: #1E2A3B; color: #F6EFE2; font: 14px/1.55 'Segoe UI', sans-serif; max-width: 860px; margin: 0 auto; padding: 22px 26px 40px; }
+h1 { font: 800 28px 'Montserrat', 'Segoe UI'; margin: 0 0 2px; }
+h2 { color: #FFA82E; font: 800 17px 'Montserrat', 'Segoe UI'; margin: 24px 0 6px; border-bottom: 1px solid #41506A; padding-bottom: 4px; }
+.suau { color: #B9B2A5; margin-top: 0; }
+b { color: #FFC46B; }
+li { margin: 4px 0; }
+.caixa { background: #27354A; border: 1px solid #41506A; border-radius: 10px; padding: 10px 14px; }
+::-webkit-scrollbar { width: 10px; } ::-webkit-scrollbar-thumb { background: #41506A; border-radius: 6px; }

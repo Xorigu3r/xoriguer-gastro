@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Xoriguer Gastro — Manual</title><link rel="stylesheet" href="manual.css"></head><body>
+<h1>Xoriguer Gastro</h1>
+<p class="suau"><b>Recipe costing & kitchen management</b> · User manual · version 3.4</p>
+<p>Xoriguer Gastro tells you what each dish costs, what it earns and what you need to buy. It also makes your menu, the allergen chart, recipe cards, production labels and the temperature log. Data is saved automatically on every change.</p>
+<div class="caixa"><b>Getting started:</b> 1) enter your <b>ingredients</b> with their purchase price; 2) create your <b>dishes</b> with quantities per portion; 3) enter or import your <b>sales</b>. From there you get everything: margins, stock, orders and analysis.</div>
+
+<h2>How it works</h2>
+<ul>
+<li><b>Ctrl + K</b> opens search: find any dish, ingredient or supplier, or run an action ("do a stocktake", "order list"…).</li>
+<li>Click a row to open it in the <b>side panel</b>. Changes are saved when you close it (or press Save).</li>
+<li>Every change can be <b>undone</b> from the notice at the bottom right or with <b>Ctrl + Z</b>.</li>
+<li>Sort any table by clicking a column header.</li>
+</ul>
+
+<h2>🍽 Recipes</h2>
+<p>There are three kinds: <b>dishes</b> (sold), <b>preparations</b> (sub-recipes: sauces, stocks, doughs…) and <b>items</b> (sold as they are: drinks, coffees).</p>
+<ul>
+<li><b>Costing:</b> type the ingredient name and pick it; enter the quantity in any unit (g, kg, ml, l…), converted automatically. If it doesn't exist, create it right there.</li>
+<li><b>Food cost</b> and <b>margin</b> are worked out on the price <b>before VAT</b>, the professional way. Green: on target; orange: tight; red: below.</li>
+<li><b>Suggested price:</b> the price needed to hit the target margin (rounded). One click applies it.</li>
+<li><b>Preparations:</b> set how much it makes (e.g. 1 l of sauce) and use it inside other dishes. If an ingredient goes up, every dish using it updates.</li>
+<li><b>Allergens and nutrition:</b> worked out from the ingredients (including preparations inside). Tick "may contain traces" if needed. Nutrition shows a traffic light per 100 g.</li>
+<li><b>Produce:</b> scale the recipe to any number of portions and compare with stock.</li>
+<li><b>Recipe card:</b> printable, with or without costs.</li>
+<li><b>Add from the library:</b> about 70 common dishes and preparations costed per portion. Your own ingredients are reused and cost updates whenever their price changes. Step by step: the <b>Getting started guide</b> tab.</li>
+<li><b>Portion sizes:</b> tapa, half portion, double… each with its own price, food cost and suggested price.</li>
+<li><b>Station:</b> cold kitchen, hot kitchen, fryer, bar… The production sheet is grouped by station (mise en place).</li>
+</ul>
+
+<h2>🧺 Ingredients</h2>
+<p>Purchase price before VAT, unit, <b>yield</b> (the usable part: potato ≈ 80%), supplier, allergens, minimum and maximum stock. The pack calculator turns "6 kg box for €21" into a price per kg. Every price change is kept in the history with a chart. CSV import and export.</p>
+<p><b>Add from the library:</b> over 100 common ingredients with family, yield, allergens and a <b>guide price</b> (shown in orange until you enter the real one; dishes using it are marked ≈). <b>Weight per piece:</b> lets you use “2 u” of a product bought by the kg. <b>Storage area:</b> stocktakes can be done by area (fridge, freezer, dry store). <b>Prices by supplier:</b> each purchase keeps every supplier's price and the dashboard tells you when another one is cheaper.</p>
+
+<h2>🛒 Purchases and 📦 stock</h2>
+<ul>
+<li><b>Purchases:</b> enter each delivery note; stock goes up and prices update (with an alert on rises). You can also log invoices without products (power, rent). Export the purchase ledger with VAT.</li>
+<li><b>Stock:</b> stock in, <b>stocktake</b> (count and type; Enter moves to the next) and <b>waste</b> with its cost.</li>
+<li><b>Orders:</b> the list builds itself from items below minimum, grouped by supplier. Send it by WhatsApp or email and, when it arrives, turn it into a delivery note with one click.</li>
+<li><b>Production:</b> choose what to make today and how many portions; you see everything you need and what's short.</li>
+</ul>
+
+<h2>📊 Sales</h2>
+<p>Enter sales per day (with + and −, or by typing) or import them from <b>Xoriguer TPV</b> or a <b>CSV</b> (date; dish; units). Sales deduct stock; saving a day again only deducts the difference.</p>
+
+<h2>📈 Analysis</h2>
+<ul>
+<li><b>Menu engineering</b> (Kasavana & Smith): each dish is a ⭐ star, 🐴 plowhorse, ❓ puzzle or 🐶 dog, with what to do about it.</li>
+<li><b>Actual food cost:</b> with two stocktakes, compare what you really used with what the recipes say. The gap is waste, over-portioning or losses.</li>
+<li><b>Price history</b> and <b>simulator</b> ("if oil goes up 20%…").</li>
+<li><b>Profit & loss</b> with fixed costs and the <b>break-even point</b>.</li>
+</ul>
+
+<h2>📄 Menu and allergens</h2>
+<p>Printable menu in three styles, the <b>14-allergen matrix</b> (EU Regulation 1169/2011), set menu and a <b>QR menu</b> for the tables.</p>
+<p><b>Costed menus:</b> if a dish name matches a recipe, the set or group menu works out the cost per guest, food cost and suggested price and, for a number of guests, adds what to prepare to production. <b>Digital menu:</b> a mobile page in 4 languages with an allergen filter; save carta.html, upload it to your website and make the QR.</p>
+
+<h2>🛡 HACCP</h2>
+<p>Daily temperature log for fridges and freezers (alerts when out of range and asks for a corrective action) and <b>production labels</b> with date, use-by, batch and allergens.</p>
+
+<h2>💾 Data</h2>
+<p>On your computer, data lives in <b>%APPDATA%\XoriguerGastro\dades.json</b>, with a daily backup (30 days). In Settings you can export or restore backups and import data from Raconet Gastronomia / Xoriguer TPV.</p>
+<p><b>Linux:</b> data lives in <b>~/.local/share/XoriguerGastro</b> (also with a daily backup). <b>Android (tablets):</b> data is kept inside the app; export a backup now and then from Settings (Drive, email…). Printing opens Android's print dialog (printer or “Save as PDF”).</p>
+</body></html>

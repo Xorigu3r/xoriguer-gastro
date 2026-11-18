@@ -1,0 +1,28 @@
+# Dependències i compilacions
+node_modules/
+build-escriptori/
+dist-linux/
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+android/capacitor-cordova-android-plugins/build/
+www/capacitor.js
+__pycache__/
+*.pyc
+
+# Instal·ladors i paquets (es publiquen a xoriguer.dev)
+*.exe
+*.apk
+*.deb
+*.tar.gz
+
+# Codi antic de referència (Raconet Gastronomia i la v2 en PyQt)
+original/
+antic_v2/
+
+# Local
+CLAUDE.md
+.claude/
+.DS_Store
+Thumbs.db

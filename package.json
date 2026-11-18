@@ -1,0 +1,25 @@
+{
+  "name": "xoriguer-gastro",
+  "version": "3.4.0",
+  "private": true,
+  "description": "Xoriguer Gastro · Escandalls i gestió de cuina (Windows, Linux i Android per a tauletes)",
+  "scripts": {
+    "test": "node test.mjs",
+    "icons": "npx capacitor-assets generate --android --iconBackgroundColor #1E2A3B --splashBackgroundColor #1E2A3B --splashBackgroundColorDark #1E2A3B",
+    "copy:cap": "node -e \"require('fs').copyFileSync('node_modules/@capacitor/core/dist/capacitor.js','www/capacitor.js')\"",
+    "sync": "npm run copy:cap && npx cap sync android",
+    "apk": "npm run sync && powershell -ExecutionPolicy Bypass -File scripts/build-apk.ps1",
+    "exe": "powershell -ExecutionPolicy Bypass -File escriptori/build-exe.ps1",
+    "linux": "wsl -d Ubuntu-22.04 -- bash escriptori/linux/empaqueta.sh"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.6.0",
+    "@capacitor/core": "8.6.0",
+    "@capacitor/filesystem": "8.1.5",
+    "@capacitor/share": "8.0.3"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^4.0.0",
+    "@capacitor/cli": "8.6.0"
+  }
+}

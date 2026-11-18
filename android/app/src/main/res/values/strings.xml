@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Gastro</string>
+    <string name="title_activity_main">Gastro</string>
+    <string name="package_name">cat.xoriguer.gastro</string>
+    <string name="custom_url_scheme">cat.xoriguer.gastro</string>
+</resources>

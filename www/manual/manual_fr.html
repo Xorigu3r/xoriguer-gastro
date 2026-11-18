@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>Xoriguer Gastro — Manuel</title><link rel="stylesheet" href="manual.css"></head><body>
+<h1>Xoriguer Gastro</h1>
+<p class="suau"><b>Fiches de coût et gestion de cuisine</b> · Manuel d'utilisation · version 3.4</p>
+<p>Xoriguer Gastro vous dit combien coûte chaque plat, ce qu'il rapporte et ce qu'il faut acheter. Il prépare aussi la carte, la carte des allergènes, les fiches techniques, les étiquettes de production et le registre des températures. Les données sont enregistrées à chaque modification.</p>
+<div class="caixa"><b>Pour commencer :</b> 1) saisissez les <b>ingrédients</b> avec leur prix d'achat ; 2) créez les <b>plats</b> avec les quantités par portion ; 3) saisissez ou importez les <b>ventes</b>. Vous avez alors tout : marges, stock, commandes et analyse.</div>
+
+<h2>Utilisation</h2>
+<ul>
+<li><b>Ctrl + K</b> ouvre la recherche : trouvez un plat, un ingrédient ou un fournisseur, ou lancez une action (« faire l'inventaire », « liste de commande »…).</li>
+<li>Cliquez sur une ligne pour l'ouvrir dans le <b>panneau de droite</b>. Les modifications sont enregistrées à la fermeture (ou avec Enregistrer).</li>
+<li>Chaque modification peut être <b>annulée</b> depuis l'avis en bas à droite ou avec <b>Ctrl + Z</b>.</li>
+<li>Triez n'importe quel tableau en cliquant sur le titre de colonne.</li>
+</ul>
+
+<h2>🍽 Recettes</h2>
+<p>Trois types : <b>plats</b> (vendus), <b>préparations</b> (sous-recettes : sauces, fonds, pâtes…) et <b>articles</b> (vendus tels quels : boissons, cafés).</p>
+<ul>
+<li><b>Fiche de coût :</b> tapez le nom de l'ingrédient et choisissez-le ; indiquez la quantité dans l'unité voulue (g, kg, ml, l…), convertie automatiquement. S'il n'existe pas, créez-le sur place.</li>
+<li>Le <b>food cost</b> et la <b>marge</b> sont calculés sur le prix <b>HT</b>, comme le font les professionnels. Vert : objectif atteint ; orange : juste ; rouge : en dessous.</li>
+<li><b>Prix conseillé :</b> le prix pour atteindre la marge visée (arrondi). Un clic pour l'appliquer.</li>
+<li><b>Préparations :</b> indiquez le rendement (ex. 1 l de sauce) et utilisez-la dans d'autres plats. Si un ingrédient augmente, le coût de tous les plats qui la contiennent se met à jour.</li>
+<li><b>Allergènes et nutrition :</b> calculés d'après les ingrédients (préparations comprises). Vous pouvez cocher « peut contenir des traces ». La nutrition affiche un feu tricolore pour 100 g.</li>
+<li><b>Produire :</b> adaptez la recette au nombre de portions et comparez avec le stock.</li>
+<li><b>Fiche technique :</b> imprimable, avec ou sans coûts.</li>
+<li><b>Ajouter depuis la base :</b> environ 70 plats et préparations courants avec la fiche de coût par portion. Vos ingrédients sont réutilisés et le coût se recalcule dès que leur prix change. Pas à pas : onglet <b>Guide de démarrage</b>.</li>
+<li><b>Tailles de portion :</b> tapa, demi-portion, portion double… chacune avec son prix, son food cost et le prix conseillé.</li>
+<li><b>Poste :</b> cuisine froide, chaude, friteuse, bar… La feuille de production est regroupée par poste (mise en place).</li>
+</ul>
+
+<h2>🧺 Ingrédients</h2>
+<p>Prix d'achat HT, unité, <b>rendement</b> (part utilisable : pomme de terre ≈ 80 %), fournisseur, allergènes, stock minimum et maximum. La calculatrice transforme « caisse de 6 kg à 21 € » en prix au kg. Chaque changement de prix est gardé dans l'historique avec un graphique. Import et export CSV.</p>
+<p><b>Ajouter depuis la base :</b> plus de 100 ingrédients courants avec la famille, le rendement, les allergènes et un <b>prix indicatif</b> (en orange jusqu'à ce que vous saisissiez le prix réel ; les plats qui l'utilisent sont marqués ≈). <b>Poids d'une pièce :</b> permet d'indiquer « 2 u » d'un produit acheté au kg. <b>Où il est rangé :</b> l'inventaire peut se faire par zone (chambre froide, congélateur, réserve). <b>Prix par fournisseur :</b> chaque achat garde le prix de chaque fournisseur et le tableau de bord vous prévient si un autre est moins cher.</p>
+
+<h2>🛒 Achats et 📦 stock</h2>
+<ul>
+<li><b>Achats :</b> saisissez chaque bon de livraison ; le stock augmente et les prix se mettent à jour (avec alerte en cas de hausse). Vous pouvez aussi noter des factures sans produits (électricité, loyer). Exportez le registre des achats avec la TVA.</li>
+<li><b>Stock :</b> entrées, <b>inventaire</b> (comptez et saisissez ; Entrée passe au suivant) et <b>pertes</b> avec leur coût.</li>
+<li><b>Commandes :</b> la liste se fait seule avec ce qui est sous le minimum, par fournisseur. Envoyez-la par WhatsApp ou e-mail et, à la livraison, transformez-la en bon de livraison en un clic.</li>
+<li><b>Production :</b> choisissez ce que vous préparez aujourd'hui et combien de portions ; vous voyez tout ce qu'il faut et ce qui manque.</li>
+</ul>
+
+<h2>📊 Ventes</h2>
+<p>Saisissez les ventes par jour (avec + et −, ou au clavier) ou importez-les depuis <b>Xoriguer TPV</b> ou un <b>CSV</b> (date ; plat ; unités). Les ventes déduisent le stock ; si vous réenregistrez un jour, seule la différence est déduite.</p>
+
+<h2>📈 Analyse</h2>
+<ul>
+<li><b>Ingénierie de menu</b> (Kasavana et Smith) : chaque plat est ⭐ étoile, 🐴 cheval de labour, ❓ énigme ou 🐶 poids mort, avec la marche à suivre.</li>
+<li><b>Food cost réel :</b> avec deux inventaires, comparez la dépense réelle à ce que disent les recettes. L'écart vient des pertes, des portions généreuses ou des vols.</li>
+<li><b>Évolution des prix</b> et <b>simulateur</b> (« si l'huile augmente de 20 %… »).</li>
+<li><b>Compte de résultat</b> avec les coûts fixes et le <b>seuil de rentabilité</b>.</li>
+</ul>
+
+<h2>📄 Carte et allergènes</h2>
+<p>Carte imprimable en trois styles, <b>tableau des 14 allergènes</b> (Règlement UE 1169/2011), menu du jour et <b>carte QR</b> pour les tables.</p>
+<p><b>Menus avec coût :</b> si le nom du plat correspond à une recette, le menu du jour (ou de groupe) calcule le coût par couvert, le food cost, le prix conseillé et, pour un nombre de couverts, ajoute à la production ce qu'il faut préparer. <b>Carte numérique :</b> une page mobile en 4 langues avec filtre d'allergènes ; enregistrez carta.html, publiez-le sur votre site et créez le QR.</p>
+
+<h2>🛡 HACCP</h2>
+<p>Relevé quotidien des températures des réfrigérateurs et congélateurs (alerte hors plage avec action corrective) et <b>étiquettes de production</b> avec date, DLC, lot et allergènes.</p>
+
+<h2>💾 Données</h2>
+<p>Sur l'ordinateur, les données sont dans <b>%APPDATA%\XoriguerGastro\dades.json</b>, avec une sauvegarde quotidienne (30 jours). Dans Réglages, exportez ou restaurez des sauvegardes et importez les données de Raconet Gastronomia / Xoriguer TPV.</p>
+<p><b>Linux :</b> les données sont dans <b>~/.local/share/XoriguerGastro</b> (avec sauvegarde quotidienne). <b>Android (tablettes) :</b> les données sont gardées dans l'application ; exportez-en une sauvegarde de temps en temps depuis Réglages (Drive, e-mail…). L'impression ouvre la boîte de dialogue d'Android (imprimante ou « Enregistrer au format PDF »).</p>
+</body></html>

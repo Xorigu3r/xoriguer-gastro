@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ca"><head><meta charset="utf-8"><title>Xoriguer Gastro — Manual</title><link rel="stylesheet" href="manual.css"></head><body>
+<h1>Xoriguer Gastro</h1>
+<p class="suau"><b>Escandalls i gestió de cuina</b> · Manual d'ús · versió 3.4</p>
+<p>Xoriguer Gastro et diu quant et costa cada plat, quant et deixa i què has de comprar. També fa la carta, la carta d'al·lèrgens, les fitxes tècniques, les etiquetes de producció i el registre de temperatures. Les dades es desen soles a cada canvi.</p>
+<div class="caixa"><b>Per començar:</b> 1) entra els <b>ingredients</b> amb el preu de compra; 2) crea els <b>plats</b> amb les quantitats per ració; 3) entra o importa les <b>vendes</b>. A partir d'aquí ho tens tot: marges, estoc, comandes i anàlisi.</div>
+
+<h2>Com es fa servir</h2>
+<ul>
+<li><b>Ctrl + K</b> obre el cercador: troba qualsevol plat, ingredient o proveïdor, o fes una acció («fer inventari», «llista de comanda»…).</li>
+<li>Clica una fila per obrir-la al <b>panell de la dreta</b>. Els canvis es desen en tancar-lo (o amb Desar).</li>
+<li>Cada canvi es pot <b>desfer</b> des de l'avís de baix a la dreta o amb <b>Ctrl + Z</b>.</li>
+<li>Ordena qualsevol taula clicant el títol de la columna.</li>
+</ul>
+
+<h2>🍽 Receptes</h2>
+<p>N'hi ha de tres tipus: <b>plats</b> (es venen), <b>elaboracions</b> (sub-receptes: salses, brous, masses…) i <b>articles</b> (es venen tal qual: begudes, cafès).</p>
+<ul>
+<li><b>Escandall:</b> escriu el nom de l'ingredient i tria'l; posa la quantitat en la unitat que vulguis (g, kg, ml, l…), que es converteix sola. Si no existeix, el pots crear allà mateix.</li>
+<li>El <b>food cost</b> i el <b>marge</b> es calculen sobre el preu <b>sense IVA</b>, com fan els professionals. Verd: compleix l'objectiu; taronja: just; vermell: per sota.</li>
+<li><b>PVP suggerit:</b> el preu que caldria per arribar al marge objectiu (arrodonit). Un clic i l'aplica.</li>
+<li><b>Elaboracions:</b> posa quant en surt (p. ex. 1 l de salsa) i la pots fer servir dins d'altres plats. Si en puja un ingredient, el cost de tots els plats que la porten s'actualitza.</li>
+<li><b>Al·lèrgens i nutrició:</b> surten sols dels ingredients (també de les elaboracions de dins). Pots marcar «pot contenir traces». La nutrició porta semàfor per 100 g.</li>
+<li><b>Produir:</b> escala la recepta a les racions que vulguis i compara-ho amb l'estoc.</li>
+<li><b>Fitxa tècnica:</b> imprimible, amb o sense costos.</li>
+<li><b>Afegir de la base:</b> uns 70 plats i elaboracions habituals amb l'escandall per ració. Es fan servir els teus ingredients i el cost es recalcula sol quan en canvies el preu. Pas a pas: pestanya <b>Guia de posada en marxa</b>.</li>
+<li><b>Mides de ració:</b> tapa, mitja ració, ració doble… cadascuna amb el seu preu, el seu food cost i el preu suggerit.</li>
+<li><b>Partida:</b> cuina freda, calenta, fregidora, barra… El full de producció surt agrupat per partida (mise en place).</li>
+</ul>
+
+<h2>🧺 Ingredients</h2>
+<p>Preu de compra sense IVA, unitat, <b>rendiment</b> (la part aprofitable: patata ≈ 80 %), proveïdor, al·lèrgens, estoc mínim i màxim. La calculadora de format passa «caixa de 6 kg a 21 €» a preu per kg. Cada canvi de preu queda a l'historial amb gràfic. Importa i exporta en CSV.</p>
+<p><b>Afegir de la base:</b> més de 100 ingredients habituals amb la família, el rendiment, els al·lèrgens i un <b>preu orientatiu</b> (marcat en taronja fins que hi poses el real; els plats que en fan servir surten amb ≈). <b>Pes d'una peça:</b> permet posar «2 u» d'un producte que compres a kg. <b>On es guarda:</b> l'inventari es pot fer per zones (cambra, congelador, magatzem). <b>Preus per proveïdor:</b> cada compra guarda el preu de cada proveïdor i el tauler t'avisa si un altre te'l ven més barat.</p>
+
+<h2>🛒 Compres i 📦 estoc</h2>
+<ul>
+<li><b>Compres:</b> entra cada albarà; l'estoc puja sol i els preus s'actualitzen (t'avisa de les pujades). També pots apuntar factures sense productes (llum, lloguer). Exporta el llibre de compres amb l'IVA.</li>
+<li><b>Estoc:</b> entrades, <b>inventari</b> (compta i escriu; Intro passa al següent) i <b>mermes</b> amb el seu cost.</li>
+<li><b>Comandes:</b> la llista es fa sola amb el que està per sota del mínim, agrupada per proveïdor. Envia-la per WhatsApp o correu i, quan arribi, converteix-la en albarà amb un clic.</li>
+<li><b>Producció:</b> tria què vols fer avui i quantes racions; et surt tot el que necessites i què et falta.</li>
+</ul>
+
+<h2>📊 Vendes</h2>
+<p>Entra les vendes per dia (amb + i −, o escrivint) o importa-les de <b>Xoriguer TPV</b> o d'un <b>CSV</b> (data; plat; unitats). Les vendes descompten l'estoc; si tornes a desar un dia, només es descompta la diferència.</p>
+
+<h2>📈 Anàlisi</h2>
+<ul>
+<li><b>Enginyeria de menú</b> (Kasavana i Smith): cada plat és ⭐ estrella, 🐴 cavall de batalla, ❓ enigma o 🐶 gos, amb què fer en cada cas.</li>
+<li><b>Food cost real:</b> amb dos inventaris compara el que has gastat de veritat amb el que diuen les receptes. La diferència són mermes, racions generoses o pèrdues.</li>
+<li><b>Evolució de preus</b> i <b>simulador</b> («si l'oli puja un 20 %…»).</li>
+<li><b>Compte de resultats</b> amb els costos fixos i el <b>punt d'equilibri</b>.</li>
+</ul>
+
+<h2>📄 Carta i al·lèrgens</h2>
+<p>Carta imprimible en tres estils, <b>matriu dels 14 al·lèrgens</b> (Reglament UE 1169/2011), menú del dia i <b>carta QR</b> per a les taules.</p>
+<p><b>Menús amb cost:</b> si el nom del plat coincideix amb una recepta, el menú del dia (o de grup) calcula el cost per comensal, el food cost, el preu suggerit i, per a un nombre de comensals, afegeix a la producció el que cal preparar. <b>Carta digital:</b> una pàgina per al mòbil en 4 idiomes amb filtre d'al·lèrgens; desa el fitxer carta.html, penja'l a la teva web i fes-ne el QR.</p>
+
+<h2>🛡 APPCC</h2>
+<p>Registre diari de temperatures de neveres i congeladors (avisa si està fora de rang i demana l'acció correctora) i <b>etiquetes de producció</b> amb data, caducitat, lot i al·lèrgens.</p>
+
+<h2>💾 Dades</h2>
+<p>A l'ordinador, les dades són a <b>%APPDATA%\XoriguerGastro\dades.json</b> i cada dia es fa una còpia (30 dies). A Ajustos pots exportar o restaurar còpies i importar les dades del Raconet Gastronomia / Xoriguer TPV.</p>
+<p><b>Linux:</b> les dades són a <b>~/.local/share/XoriguerGastro</b> (també amb còpia diària). <b>Android (tauletes):</b> les dades es guarden dins de l'app; exporta'n una còpia de seguretat de tant en tant des d'Ajustos (Drive, correu…). Per imprimir s'obre el diàleg d'impressió d'Android (impressora o «Desa com a PDF»).</p>
+</body></html>

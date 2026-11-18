@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Getting started guide · Xoriguer Gastro</title><style>.cap .lema { color: #FFA82E; font-weight: 700; letter-spacing: .04em; margin-top: 6px; }
+@font-face { font-family: 'Montserrat'; font-weight: 800; src: url('../fonts/Montserrat-ExtraBold.ttf'); }
+:root { --f: #1E2A3B; --c: #27354A; --c3: #31405A; --l: #41506A; --t: #F6EFE2; --s: #B9B2A5; --o: #FFA82E; }
+* { box-sizing: border-box; }
+body { margin: 0; background: linear-gradient(#24344A, #1A2533) fixed; color: var(--t); font: 15px/1.6 'Segoe UI', system-ui, sans-serif; }
+.cap { text-align: center; padding: 34px 16px 18px; }
+.cap img { width: 72px; } h1 { font: 800 30px 'Montserrat', 'Segoe UI'; margin: 8px 0 4px; } .cap p { color: var(--s); margin: 0 auto; max-width: 640px; }
+.barra { width: 70px; height: 3px; margin: 14px auto 0; border-radius: 2px; background: linear-gradient(90deg, #FFA82E, #F2650F); }
+main { max-width: 1040px; margin: 0 auto; padding: 0 16px 50px; }
+nav { background: var(--c); border: 1px solid var(--l); border-radius: 12px; padding: 12px 16px; margin: 18px 0 26px; columns: 2 260px; column-gap: 24px; }
+nav b { display: block; color: var(--o); font: 800 13px 'Montserrat', 'Segoe UI'; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 6px; column-span: all; }
+nav a { display: block; color: var(--t); text-decoration: none; padding: 2px 0; font-size: 14px; break-inside: avoid; } nav a:hover { color: var(--o); }
+nav a span { color: var(--s); display: inline-block; width: 26px; }
+section { background: var(--c); border: 1px solid var(--l); border-radius: 14px; padding: 18px 20px 20px; margin: 0 0 22px; }
+h2 { font: 800 19px 'Montserrat', 'Segoe UI'; margin: 0 0 10px; display: flex; align-items: center; gap: 10px; }
+h2 .n { background: linear-gradient(135deg, #FFA82E, #F2650F); color: #2a1400; border-radius: 50%; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; font-size: 14px; flex: none; }
+b { color: #FFC46B; } ul { padding-left: 20px; margin: 6px 0; } li { margin: 4px 0; } p { margin: 6px 0; }
+.consell { background: var(--c3); border-left: 3px solid var(--o); border-radius: 8px; padding: 8px 12px; margin: 10px 0 0; font-size: 14px; }
+figure { margin: 14px 0 0; } figure img { width: 100%; display: block; border-radius: 10px; border: 1px solid var(--l); cursor: zoom-in; box-shadow: 0 8px 24px rgba(10,16,26,.35); }
+figure.gran { position: fixed; inset: 0; margin: 0; background: rgba(16,24,36,.92); display: flex; align-items: center; justify-content: center; z-index: 9; padding: 2vh 2vw; }
+figure.gran img { width: auto; max-width: 96vw; max-height: 96vh; cursor: zoom-out; }
+.check { list-style: none; padding: 0; } .check li { padding: 6px 0 6px 30px; position: relative; border-bottom: 1px dashed var(--l); }
+.check li::before { content: '☐'; position: absolute; left: 4px; color: var(--o); font-size: 18px; line-height: 1.2; }
+.peu { color: var(--s); text-align: center; font-size: 12px; margin-top: 26px; }
+@media print { body { background: #fff; color: #222; } section, nav { background: #fff; border-color: #ccc; break-inside: avoid; } b { color: #000; } .consell { background: #f4efe6; }
+  figure img { box-shadow: none; } .cap p, nav a span, .peu { color: #555; } nav a { color: #222; } }
+</style></head><body>
+<div class="cap"><img src="../img/icona-256.png" alt=""><div class="lema">Xoriguer Gastro · Recipe costing &amp; kitchen management</div><h1>Getting started guide</h1><p>How to set up Xoriguer Gastro for a new venue, step by step, and how to use it every day.</p><div class="barra"></div></div>
+<main><nav><b>Contents</b><a href="#s1"><span>1</span>First launch</a><a href="#s2"><span>2</span>Your venue details</a><a href="#s3"><span>3</span>Suppliers</a><a href="#s4"><span>4</span>Ingredients: start from the library</a><a href="#s5"><span>5</span>Add the prices</a><a href="#s6"><span>6</span>Dishes: add them from the library</a><a href="#s7"><span>7</span>Costing each dish</a><a href="#s8"><span>8</span>The recipe list</a><a href="#s9"><span>9</span>Your first stocktake</a><a href="#s10"><span>10</span>Every day: purchases</a><a href="#s11"><span>11</span>Orders</a><a href="#s12"><span>12</span>Sales</a><a href="#s13"><span>13</span>Production</a><a href="#s14"><span>14</span>The dashboard</a><a href="#s15"><span>15</span>Analysing the business</a><a href="#s16"><span>16</span>Menu and allergens</a><a href="#s17"><span>17</span>Set menu</a><a href="#s18"><span>18</span>HACCP</a><a href="#s19"><span>19</span>Shortcuts to go faster</a></nav><section id="s1"><h2><span class="n">1</span>First launch</h2><p>The first time you open the program, pick the <b>language</b> and how you want to start:</p>
+<ul>
+<li><b>Start blank</b>: for a new venue. That&#x27;s what we&#x27;ll do in this guide.</li>
+<li><b>Start with an example</b>: a sample bar to try everything safely. You can wipe it later in Settings.</li>
+<li><b>Import Raconet data</b>: only shown if Raconet Gastronomia or Xoriguer TPV is found on this computer.</li>
+<li><b>Open a backup</b>: if you already have an exported .json file.</li>
+</ul>
+<p class="consell">💡 Everything saves itself on every change. There&#x27;s no save button to look for.</p><figure><img src="img/en/01-benvinguda.webp" alt="Image 1: First launch" loading="lazy"></figure></section><section id="s2"><h2><span class="n">2</span>Your venue details</h2><p>Go to <b>Settings</b> and fill in:</p>
+<ul>
+<li><b>Name, address and phone</b>: they appear on the menu, recipe cards and labels.</li>
+<li><b>Default VAT</b> (10 % for hospitality in Spain) and the <b>currency</b>.</li>
+<li><b>Target margin per category</b>: the gross margin you want on tapas, sandwiches, desserts… The program tells you whether each dish gets there and what price it would need.</li>
+<li><b>Default shelf life</b> for production labels.</li>
+</ul>
+<p class="consell">💡 Margins are worked out on the price <b>before VAT</b>, which is what really goes into the till.</p><figure><img src="img/en/02-ajustos.webp" alt="Image 2: Your venue details" loading="lazy"></figure></section><section id="s3"><h2><span class="n">3</span>Suppliers</h2><p>In <b>Suppliers</b>, create one for each company that delivers to you: name, phone (for WhatsApp), email, contact person, <b>delivery days</b> and <b>minimum order</b>.</p>
+<p>You&#x27;ll then link them to ingredients and orders will be grouped by supplier, ready to send.</p><figure><img src="img/en/03-proveidors.webp" alt="Image 3: Suppliers" loading="lazy"></figure></section><section id="s4"><h2><span class="n">4</span>Ingredients: start from the library</h2><p>In <b>Ingredients → Add from the library</b> there are over 120 common products with family, yield, allergens, nutrition and a <b>guide price</b> already set. Tick the ones you use and press <b>Add</b>.</p>
+<ul>
+<li>Ones you already have are greyed out (“already added”), so nothing is duplicated.</li>
+<li>You can also import a supplier price list as <b>CSV</b>, or create them one by one with <b>New ingredient</b> (or the N key).</li>
+</ul><figure><img src="img/en/04-base-ingredients.webp" alt="Image 4: Ingredients: start from the library" loading="lazy"></figure></section><section id="s5"><h2><span class="n">5</span>Add the prices</h2><p>Click each ingredient to open its card on the right:</p>
+<ul>
+<li><b>Unit and price before VAT</b> (€/kg, €/l or €/unit). If you buy by the box, the <b>pack calculator</b> turns it into a price per kg.</li>
+<li><b>Yield</b>: the usable part after cleaning (potato ≈ 80 %, hake ≈ 55 %). The real price adjusts itself.</li>
+<li><b>Weight per piece</b> (optional): to use “2 u” in recipes for a product bought by the kg.</li>
+<li><b>Supplier</b>, <b>storage area</b> (fridge, freezer…) and <b>min/max stock</b> for automatic orders.</li>
+<li><b>Prices by supplier</b>: every delivery note keeps the price; if another supplier is cheaper, the dashboard tells you.</li>
+</ul>
+<p class="consell">💡 <b>Library prices are guide prices</b> (a market average) and show in orange with a “guide” tag. Replace them with your supplier&#x27;s real prices: the <b>⚠ Guide prices</b> filter in the list gathers them all. If a price is already right, press <b>The price is right</b>. The first purchase of each product also updates it.</p><figure><img src="img/en/05-ingredient.webp" alt="Image 5: Add the prices" loading="lazy"></figure></section><section id="s6"><h2><span class="n">6</span>Dishes: add them from the library</h2><p>In <b>Recipes → Add from the library</b> there are about 70 dishes, preparations (brava sauce, aioli, béchamel, sofrito…) and bar items, each costed per portion.</p>
+<ul>
+<li><b>Your own ingredients</b> are reused if you have them (even in another language) and missing ones are created.</li>
+<li><b>Preparations inside</b> are added automatically: pick patatas bravas and you also get the brava sauce.</li>
+<li>Cost comes from your prices and <b>updates itself</b> when you change one, including inside preparations.</li>
+</ul>
+<p class="consell">💡 <b>Note:</b> while ingredients have guide prices, the dish is marked <b>≈</b> with a warning, and its cost and margin <b>aren&#x27;t real</b>. Enter your supplier&#x27;s prices and everything updates itself. Also check the quantities and adjust them to your portions.</p><figure><img src="img/en/06-base-plats.webp" alt="Image 6: Dishes: add them from the library" loading="lazy"></figure></section><section id="s7"><h2><span class="n">7</span>Costing each dish</h2><p>Open a dish to see and adjust its costing:</p>
+<ul>
+<li>Add ingredients or preparations by typing their name; enter the <b>quantity per portion</b> in any unit (g, kg, ml, l, u). If it doesn&#x27;t exist, create it right there.</li>
+<li>Below you see the <b>cost per portion</b>, the <b>food cost</b> (green: good, orange: tight, red: low) and the <b>margin</b>.</li>
+<li>Type the <b>price incl. VAT</b> or press the <b>suggested price</b> button to hit your target margin.</li>
+<li><b>Portion sizes</b>: tapa, half, double… each with its own price and margin.</li>
+<li><b>Station</b> (cold kitchen, hot kitchen, fryer, bar): organises the production sheet.</li>
+<li>Tabs: <b>Method</b> (steps, photo, menu description), <b>Allergens &amp; nutrition</b> (worked out for you) and <b>Produce</b> (scale to N portions).</li>
+<li>Printable <b>recipe card</b>, with or without costs.</li>
+</ul><figure><img src="img/en/07-escandall.webp" alt="Image 7: Costing each dish" loading="lazy"></figure></section><section id="s8"><h2><span class="n">8</span>The recipe list</h2><p>The list shows at a glance each dish&#x27;s cost, price, food cost, margin, status and allergens. Click any column to sort (for example by food cost, to find the dishes that earn least).</p>
+<p>Filter by dishes, preparations or items, and by category. The <b>Menu</b> tick box decides whether the dish appears on the printed and digital menu.</p><figure><img src="img/en/08-receptes.webp" alt="Image 8: The recipe list" loading="lazy"></figure></section><section id="s9"><h2><span class="n">9</span>Your first stocktake</h2><p>In <b>Stock → Do a stocktake</b>, count what you have and type it in (Enter moves to the next). Sort it <b>by area</b> (fridge, freezer, dry store) to walk round in order, or print the <b>count sheet</b>.</p>
+<p>Saving sets stock to your count. Do one at the start and another at the end of the month: <b>Analysis → Actual food cost</b> shows what you really used compared with what the recipes say.</p><figure><img src="img/en/10-inventari.webp" alt="Image 9: Your first stocktake" loading="lazy"></figure></section><section id="s10"><h2><span class="n">10</span>Every day: purchases</h2><p>When a delivery arrives, go to <b>Purchases → New purchase</b>, pick the supplier and enter the products, quantity and price.</p>
+<ul>
+<li><b>Stock goes up</b> and the <b>ingredient price updates</b>: every dish using it is recalculated.</li>
+<li>If a price rises, you get an alert with the percentage.</li>
+<li>Bills without products (power, rent) can be logged with just the amount, for the profit &amp; loss.</li>
+</ul><figure><img src="img/en/09-compra.webp" alt="Image 10: Every day: purchases" loading="lazy"></figure></section><section id="s11"><h2><span class="n">11</span>Orders</h2><p>In <b>Orders</b> the list builds itself from items below minimum, grouped by supplier. Adjust quantities, add anything else and send it by <b>WhatsApp</b> or <b>email</b> in one click.</p>
+<p>When it arrives, press <b>Arrived → delivery note</b> and it becomes a purchase.</p><figure><img src="img/en/11-comandes.webp" alt="Image 11: Orders" loading="lazy"></figure></section><section id="s12"><h2><span class="n">12</span>Sales</h2><p>In <b>Sales → Enter sales</b> log the units sold of each dish (with + and − or by typing), or import them from <b>Xoriguer TPV</b> or a <b>CSV</b> from your till.</p>
+<p>Sales deduct stock according to the recipes (saving the same day again only deducts the difference) and feed every analysis.</p><figure><img src="img/en/12-vendes.webp" alt="Image 12: Sales" loading="lazy"></figure></section><section id="s13"><h2><span class="n">13</span>Production</h2><p>In <b>Production</b> choose what to prepare and how many portions (or fill it from a week of sales). You see everything you need, what you have and what&#x27;s <b>short</b>, which you can send to the order with one button.</p>
+<p>The printed <b>production sheet</b> is grouped by <b>station</b>, with each recipe&#x27;s quantities already scaled (mise en place).</p><figure><img src="img/en/17-produccio.webp" alt="Image 13: Production" loading="lazy"></figure></section><section id="s14"><h2><span class="n">14</span>The dashboard</h2><p>The <b>Dashboard</b> is the home screen: 7-day sales, theoretical food cost, gross margin and stock value, the 30-day chart and the <b>alerts</b>: items out of stock or below minimum, price rises, dishes below target margin, ingredients without a price, a cheaper supplier, temperatures out of range…</p>
+<p>Click an alert to jump straight to where you need to act.</p><figure><img src="img/en/13-tauler.webp" alt="Image 14: The dashboard" loading="lazy"></figure></section><section id="s15"><h2><span class="n">15</span>Analysing the business</h2><p>In <b>Analysis</b> you have:</p>
+<ul>
+<li><b>Menu engineering</b>: each dish is a ⭐ star (sells well, earns well), 🐴 plowhorse, ❓ puzzle or 🐶 dog, with what to do about each.</li>
+<li><b>Actual food cost</b> between two stocktakes, compared with theoretical: the gap is waste, over-portioning or losses.</li>
+<li><b>Price history</b> and <b>simulator</b> (“if oil goes up 20 %, which dishes lose margin and what should they cost?”).</li>
+<li><b>Profit &amp; loss</b> with fixed costs and the <b>break-even point</b>.</li>
+</ul><figure><img src="img/en/14-enginyeria.webp" alt="Image 15: Analysing the business" loading="lazy"></figure></section><section id="s16"><h2><span class="n">16</span>Menu and allergens</h2><p>In <b>Menu &amp; allergens</b>:</p>
+<ul>
+<li>Printable <b>menu</b> in three styles (classic, modern, chalkboard), with allergens and descriptions.</li>
+<li><b>14-allergen matrix</b> (EU Regulation 1169/2011), mandatory and worked out from the recipes.</li>
+<li><b>QR menu</b>: save the <b>digital menu</b> (a mobile page in 4 languages with an allergen filter), upload it to your website and print QR cards for the tables.</li>
+</ul><figure><img src="img/en/15-carta.webp" alt="Image 16: Menu and allergens" loading="lazy"></figure></section><section id="s17"><h2><span class="n">17</span>Set menu</h2><p>In <b>Set menu</b> enter the starters, mains and desserts (or pick them from your recipes) and the price. If a name matches a recipe, the program works out the <b>cost per guest</b>, <b>food cost</b>, <b>margin</b> and <b>suggested price</b>.</p>
+<p>Enter how many guests you expect and press <b>Add to production</b>: you&#x27;ll know what to prepare and buy. Print it for the chalkboard or the tables.</p><figure><img src="img/en/16-menu.webp" alt="Image 17: Set menu" loading="lazy"></figure></section><section id="s18"><h2><span class="n">18</span>HACCP</h2><p>In <b>HACCP</b> log fridge and freezer <b>temperatures</b> every day (if one is out of range, you&#x27;re asked for the corrective action), print the monthly log for inspections and make <b>production labels</b> with date, use-by, batch and allergens.</p>
+<p>In the <b>Equipment</b> tab add each fridge with its correct range.</p><figure><img src="img/en/18-appcc.webp" alt="Image 18: HACCP" loading="lazy"></figure></section><section id="s19"><h2><span class="n">19</span>Shortcuts to go faster</h2><ul>
+<li><b>Ctrl + K</b>: find any dish, ingredient or supplier, or run an action (“do a stocktake”, “new purchase”…).</li>
+<li><b>N</b>: create a new item on the current screen. <b>/</b>: jump to search.</li>
+<li><b>Ctrl + Z</b>: undo the last change (also from the notice at the bottom right).</li>
+<li><b>Ctrl + 1…9</b>: switch screen. <b>Esc</b>: close the panel.</li>
+<li>Data lives in <b>%APPDATA%\XoriguerGastro</b> with an <b>automatic daily backup</b> (30 days). In <b>Settings</b> you can export or restore one.</li>
+</ul><figure><img src="img/en/19-paleta.webp" alt="Image 19: Shortcuts to go faster" loading="lazy"></figure></section>
+<section><h2><span class="n">✓</span>Checklist</h2><ul class="check"><li>Name, address, VAT and target margins in Settings</li><li>Suppliers created</li><li>Ingredients added from the library or a CSV, with price, supplier and minimum stock</li><li>Dishes added from the library or created, with quantities checked and prices set</li><li>Allergens checked (printed matrix on display for guests)</li><li>First stocktake done</li><li>Fridges and freezers set up in HACCP</li><li>Printed menu and/or digital menu with QR on the tables</li></ul></section>
+<div class="peu">Xoriguer Gastro · guide · v3.4</div></main>
+<script>document.addEventListener('click', (e) => { const f = e.target.closest('figure'); if (f) f.classList.toggle('gran'); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') document.querySelectorAll('figure.gran').forEach((f) => f.classList.remove('gran')); });</script>
+</body></html>

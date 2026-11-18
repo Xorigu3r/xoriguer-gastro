@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guide de démarrage · Xoriguer Gastro</title><style>.cap .lema { color: #FFA82E; font-weight: 700; letter-spacing: .04em; margin-top: 6px; }
+@font-face { font-family: 'Montserrat'; font-weight: 800; src: url('../fonts/Montserrat-ExtraBold.ttf'); }
+:root { --f: #1E2A3B; --c: #27354A; --c3: #31405A; --l: #41506A; --t: #F6EFE2; --s: #B9B2A5; --o: #FFA82E; }
+* { box-sizing: border-box; }
+body { margin: 0; background: linear-gradient(#24344A, #1A2533) fixed; color: var(--t); font: 15px/1.6 'Segoe UI', system-ui, sans-serif; }
+.cap { text-align: center; padding: 34px 16px 18px; }
+.cap img { width: 72px; } h1 { font: 800 30px 'Montserrat', 'Segoe UI'; margin: 8px 0 4px; } .cap p { color: var(--s); margin: 0 auto; max-width: 640px; }
+.barra { width: 70px; height: 3px; margin: 14px auto 0; border-radius: 2px; background: linear-gradient(90deg, #FFA82E, #F2650F); }
+main { max-width: 1040px; margin: 0 auto; padding: 0 16px 50px; }
+nav { background: var(--c); border: 1px solid var(--l); border-radius: 12px; padding: 12px 16px; margin: 18px 0 26px; columns: 2 260px; column-gap: 24px; }
+nav b { display: block; color: var(--o); font: 800 13px 'Montserrat', 'Segoe UI'; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 6px; column-span: all; }
+nav a { display: block; color: var(--t); text-decoration: none; padding: 2px 0; font-size: 14px; break-inside: avoid; } nav a:hover { color: var(--o); }
+nav a span { color: var(--s); display: inline-block; width: 26px; }
+section { background: var(--c); border: 1px solid var(--l); border-radius: 14px; padding: 18px 20px 20px; margin: 0 0 22px; }
+h2 { font: 800 19px 'Montserrat', 'Segoe UI'; margin: 0 0 10px; display: flex; align-items: center; gap: 10px; }
+h2 .n { background: linear-gradient(135deg, #FFA82E, #F2650F); color: #2a1400; border-radius: 50%; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; font-size: 14px; flex: none; }
+b { color: #FFC46B; } ul { padding-left: 20px; margin: 6px 0; } li { margin: 4px 0; } p { margin: 6px 0; }
+.consell { background: var(--c3); border-left: 3px solid var(--o); border-radius: 8px; padding: 8px 12px; margin: 10px 0 0; font-size: 14px; }
+figure { margin: 14px 0 0; } figure img { width: 100%; display: block; border-radius: 10px; border: 1px solid var(--l); cursor: zoom-in; box-shadow: 0 8px 24px rgba(10,16,26,.35); }
+figure.gran { position: fixed; inset: 0; margin: 0; background: rgba(16,24,36,.92); display: flex; align-items: center; justify-content: center; z-index: 9; padding: 2vh 2vw; }
+figure.gran img { width: auto; max-width: 96vw; max-height: 96vh; cursor: zoom-out; }
+.check { list-style: none; padding: 0; } .check li { padding: 6px 0 6px 30px; position: relative; border-bottom: 1px dashed var(--l); }
+.check li::before { content: '☐'; position: absolute; left: 4px; color: var(--o); font-size: 18px; line-height: 1.2; }
+.peu { color: var(--s); text-align: center; font-size: 12px; margin-top: 26px; }
+@media print { body { background: #fff; color: #222; } section, nav { background: #fff; border-color: #ccc; break-inside: avoid; } b { color: #000; } .consell { background: #f4efe6; }
+  figure img { box-shadow: none; } .cap p, nav a span, .peu { color: #555; } nav a { color: #222; } }
+</style></head><body>
+<div class="cap"><img src="../img/icona-256.png" alt=""><div class="lema">Xoriguer Gastro · Fiches de coût et gestion de cuisine</div><h1>Guide de démarrage</h1><p>Comment configurer Xoriguer Gastro pour un nouvel établissement, étape par étape, et comment l&#x27;utiliser au quotidien.</p><div class="barra"></div></div>
+<main><nav><b>Sommaire</b><a href="#s1"><span>1</span>Premier démarrage</a><a href="#s2"><span>2</span>Les informations de l&#x27;établissement</a><a href="#s3"><span>3</span>Les fournisseurs</a><a href="#s4"><span>4</span>Les ingrédients : partez de la base</a><a href="#s5"><span>5</span>Indiquez les prix</a><a href="#s6"><span>6</span>Les plats : ajoutez-les depuis la base</a><a href="#s7"><span>7</span>La fiche de coût de chaque plat</a><a href="#s8"><span>8</span>La liste des recettes</a><a href="#s9"><span>9</span>Le premier inventaire</a><a href="#s10"><span>10</span>Au quotidien : les achats</a><a href="#s11"><span>11</span>Les commandes</a><a href="#s12"><span>12</span>Les ventes</a><a href="#s13"><span>13</span>La production</a><a href="#s14"><span>14</span>Le tableau de bord</a><a href="#s15"><span>15</span>Analyser l&#x27;activité</a><a href="#s16"><span>16</span>La carte et les allergènes</a><a href="#s17"><span>17</span>Le menu du jour</a><a href="#s18"><span>18</span>Le HACCP</a><a href="#s19"><span>19</span>Astuces pour aller vite</a></nav><section id="s1"><h2><span class="n">1</span>Premier démarrage</h2><p>À la première ouverture, choisissez la <b>langue</b> et la façon de commencer :</p>
+<ul>
+<li><b>Commencer à vide</b> : pour un nouvel établissement. C&#x27;est ce que nous ferons dans ce guide.</li>
+<li><b>Commencer avec un exemple</b> : un bar fictif pour tout essayer sans crainte. Vous pourrez l&#x27;effacer ensuite dans Réglages.</li>
+<li><b>Importer les données de Raconet</b> : n&#x27;apparaît que si le programme trouve Raconet Gastronomia ou Xoriguer TPV sur cet ordinateur.</li>
+<li><b>Ouvrir une sauvegarde</b> : si vous avez déjà un fichier .json exporté.</li>
+</ul>
+<p class="consell">💡 Tout est enregistré automatiquement à chaque modification. Pas besoin de chercher un bouton Enregistrer.</p><figure><img src="img/fr/01-benvinguda.webp" alt="Image 1: Premier démarrage" loading="lazy"></figure></section><section id="s2"><h2><span class="n">2</span>Les informations de l&#x27;établissement</h2><p>Allez dans <b>Réglages</b> et remplissez :</p>
+<ul>
+<li><b>Nom, adresse et téléphone</b> : ils apparaissent sur la carte, les fiches et les étiquettes.</li>
+<li><b>TVA par défaut</b> (10 % en restauration en Espagne) et la <b>devise</b>.</li>
+<li><b>Marge visée par catégorie</b> : la marge brute souhaitée pour les tapas, sandwichs, desserts… Le programme vous dira si chaque plat l&#x27;atteint et à quel prix il faudrait le vendre.</li>
+<li><b>Jours de conservation</b> par défaut des étiquettes de production.</li>
+</ul>
+<p class="consell">💡 Les marges se calculent sur le prix <b>hors TVA</b>, ce qui rentre vraiment dans la caisse.</p><figure><img src="img/fr/02-ajustos.webp" alt="Image 2: Les informations de l&#x27;établissement" loading="lazy"></figure></section><section id="s3"><h2><span class="n">3</span>Les fournisseurs</h2><p>Dans <b>Fournisseurs</b>, créez-en un par entreprise qui vous livre : nom, téléphone (pour WhatsApp), e-mail, contact, <b>jours de livraison</b> et <b>minimum de commande</b>.</p>
+<p>Vous les associerez ensuite aux ingrédients et les commandes seront regroupées par fournisseur, prêtes à envoyer.</p><figure><img src="img/fr/03-proveidors.webp" alt="Image 3: Les fournisseurs" loading="lazy"></figure></section><section id="s4"><h2><span class="n">4</span>Les ingrédients : partez de la base</h2><p>Dans <b>Ingrédients → Ajouter depuis la base</b>, plus de 120 produits courants avec la famille, le rendement, les allergènes, la nutrition et un <b>prix indicatif</b> déjà renseignés. Cochez ceux que vous utilisez et cliquez sur <b>Ajouter</b>.</p>
+<ul>
+<li>Ceux que vous avez déjà apparaissent en gris (« déjà présent ») : pas de doublons.</li>
+<li>Vous pouvez aussi importer un <b>CSV</b> du tarif fournisseur, ou les créer un par un avec <b>Nouvel ingrédient</b> (ou la touche N).</li>
+</ul><figure><img src="img/fr/04-base-ingredients.webp" alt="Image 4: Les ingrédients : partez de la base" loading="lazy"></figure></section><section id="s5"><h2><span class="n">5</span>Indiquez les prix</h2><p>Cliquez sur chaque ingrédient pour ouvrir sa fiche à droite :</p>
+<ul>
+<li><b>Unité et prix HT</b> (€/kg, €/l ou €/unité). Si vous achetez par carton, le <b>calculateur de conditionnement</b> le convertit en prix au kg.</li>
+<li><b>Rendement</b> : la part utilisable après épluchage ou nettoyage (pomme de terre ≈ 80 %, merlu ≈ 55 %). Le prix réel s&#x27;ajuste tout seul.</li>
+<li><b>Poids d&#x27;une pièce</b> (facultatif) : pour écrire « 2 u » dans les recettes d&#x27;un produit acheté au kg.</li>
+<li><b>Fournisseur</b>, <b>où il est rangé</b> (chambre froide, congélateur…) et <b>stock mini/maxi</b> pour les commandes automatiques.</li>
+<li><b>Prix par fournisseur</b> : chaque bon de livraison enregistre le prix ; si un autre fournisseur est moins cher, le tableau de bord vous prévient.</li>
+</ul>
+<p class="consell">💡 <b>Les prix de la base sont indicatifs</b> (une moyenne du marché) et apparaissent en orange avec l&#x27;étiquette « indicatif ». Remplacez-les par les prix réels de votre fournisseur : le filtre <b>⚠ Prix indicatifs</b> de la liste les regroupe. Si le prix est bon, cliquez sur <b>Le prix est correct</b>. Le premier achat de chaque produit le met aussi à jour.</p><figure><img src="img/fr/05-ingredient.webp" alt="Image 5: Indiquez les prix" loading="lazy"></figure></section><section id="s6"><h2><span class="n">6</span>Les plats : ajoutez-les depuis la base</h2><p>Dans <b>Recettes → Ajouter depuis la base</b>, environ 70 plats, préparations (sauce brava, aïoli, béchamel, sofrito…) et articles de bar avec la fiche de coût par portion.</p>
+<ul>
+<li><b>Vos ingrédients</b> sont réutilisés s&#x27;ils existent déjà (même dans une autre langue) et ceux qui manquent sont créés.</li>
+<li>Les <b>préparations incluses</b> sont ajoutées automatiquement : en choisissant des patatas bravas, vous aurez aussi la sauce brava.</li>
+<li>Le coût vient de vos prix et <b>se recalcule tout seul</b> dès que vous en modifiez un, y compris dans les préparations.</li>
+</ul>
+<p class="consell">💡 <b>Attention :</b> tant que des ingrédients ont un prix indicatif, le plat est marqué <b>≈</b> avec un avertissement, et son coût et sa marge <b>ne sont pas réels</b>. Saisissez les prix de votre fournisseur et tout se recalcule. Vérifiez aussi les quantités et adaptez-les à vos portions.</p><figure><img src="img/fr/06-base-plats.webp" alt="Image 6: Les plats : ajoutez-les depuis la base" loading="lazy"></figure></section><section id="s7"><h2><span class="n">7</span>La fiche de coût de chaque plat</h2><p>Ouvrez un plat pour voir et ajuster sa fiche :</p>
+<ul>
+<li>Ajoutez des ingrédients ou des préparations en tapant leur nom ; indiquez la <b>quantité par portion</b> dans n&#x27;importe quelle unité (g, kg, ml, l, u). S&#x27;il n&#x27;existe pas, créez-le sur place.</li>
+<li>En bas : le <b>coût par portion</b>, le <b>food cost</b> (vert : bien, orange : juste, rouge : insuffisant) et la <b>marge</b>.</li>
+<li>Saisissez le <b>prix TTC</b> ou cliquez sur le <b>prix conseillé</b> pour atteindre la marge visée.</li>
+<li><b>Tailles de portion</b> : tapa, demi, double… chacune avec son prix et sa marge.</li>
+<li><b>Poste</b> (cuisine froide, chaude, friteuse, bar) : organise la feuille de production.</li>
+<li>Onglets : <b>Préparation</b> (étapes, photo, description pour la carte), <b>Allergènes et nutrition</b> (calculés automatiquement) et <b>Produire</b> (adapter à N portions).</li>
+<li><b>Fiche technique</b> imprimable, avec ou sans coûts.</li>
+</ul><figure><img src="img/fr/07-escandall.webp" alt="Image 7: La fiche de coût de chaque plat" loading="lazy"></figure></section><section id="s8"><h2><span class="n">8</span>La liste des recettes</h2><p>La liste montre d&#x27;un coup d&#x27;œil le coût, le prix, le food cost, la marge, l&#x27;état et les allergènes de chaque plat. Cliquez sur une colonne pour trier (par exemple par food cost, pour repérer les plats les moins rentables).</p>
+<p>Filtrez par plats, préparations ou articles, et par catégorie. La case <b>Carte</b> détermine si le plat figure sur la carte imprimée et numérique.</p><figure><img src="img/fr/08-receptes.webp" alt="Image 8: La liste des recettes" loading="lazy"></figure></section><section id="s9"><h2><span class="n">9</span>Le premier inventaire</h2><p>Dans <b>Stock → Faire l&#x27;inventaire</b>, comptez ce que vous avez et saisissez-le (Entrée passe au suivant). Vous pouvez le trier <b>par zone</b> (chambre froide, congélateur, réserve) pour suivre votre parcours, ou imprimer la <b>feuille de comptage</b>.</p>
+<p>En enregistrant, le stock prend les valeurs comptées. Faites-en un en début et un en fin de mois : dans <b>Analyse → Food cost réel</b>, vous verrez ce que vous avez vraiment consommé par rapport aux recettes.</p><figure><img src="img/fr/10-inventari.webp" alt="Image 9: Le premier inventaire" loading="lazy"></figure></section><section id="s10"><h2><span class="n">10</span>Au quotidien : les achats</h2><p>À l&#x27;arrivée d&#x27;un bon de livraison, dans <b>Achats → Nouvel achat</b>, choisissez le fournisseur et saisissez les produits, la quantité et le prix.</p>
+<ul>
+<li>Le <b>stock augmente tout seul</b> et le <b>prix de l&#x27;ingrédient est mis à jour</b> : tous les plats qui l&#x27;utilisent sont recalculés.</li>
+<li>Si un prix augmente, vous êtes prévenu avec le pourcentage.</li>
+<li>Les factures sans produits (électricité, loyer) peuvent être saisies avec leur seul montant, pour le compte de résultat.</li>
+</ul><figure><img src="img/fr/09-compra.webp" alt="Image 10: Au quotidien : les achats" loading="lazy"></figure></section><section id="s11"><h2><span class="n">11</span>Les commandes</h2><p>Dans <b>Commandes</b>, la liste se crée toute seule avec ce qui est sous le minimum, regroupée par fournisseur. Ajustez les quantités, ajoutez ce que vous voulez et envoyez-la par <b>WhatsApp</b> ou <b>e-mail</b> en un clic.</p>
+<p>À la livraison, cliquez sur <b>Arrivé → bon de livraison</b> : elle devient un achat.</p><figure><img src="img/fr/11-comandes.webp" alt="Image 11: Les commandes" loading="lazy"></figure></section><section id="s12"><h2><span class="n">12</span>Les ventes</h2><p>Dans <b>Ventes → Saisir les ventes</b>, notez les unités vendues de chaque plat (avec + et − ou en tapant), ou importez-les depuis <b>Xoriguer TPV</b> ou un <b>CSV</b> de votre caisse.</p>
+<p>Les ventes déduisent le stock selon les recettes (si vous réenregistrez le même jour, seule la différence est déduite) et alimentent toutes les analyses.</p><figure><img src="img/fr/12-vendes.webp" alt="Image 12: Les ventes" loading="lazy"></figure></section><section id="s13"><h2><span class="n">13</span>La production</h2><p>Dans <b>Production</b>, choisissez ce que vous voulez préparer et combien de portions (ou remplissez avec les ventes d&#x27;une semaine). Vous voyez tout ce qu&#x27;il faut, ce que vous avez et ce qui <b>manque</b>, à envoyer en commande d&#x27;un clic.</p>
+<p>La <b>feuille de production</b> imprimée est regroupée par <b>poste</b>, avec les quantités de chaque recette déjà calculées (mise en place).</p><figure><img src="img/fr/17-produccio.webp" alt="Image 13: La production" loading="lazy"></figure></section><section id="s14"><h2><span class="n">14</span>Le tableau de bord</h2><p>Le <b>Tableau de bord</b> est l&#x27;écran d&#x27;accueil : ventes sur 7 jours, food cost théorique, marge brute et valeur du stock, le graphique sur 30 jours et les <b>alertes</b> : produits épuisés ou sous le minimum, hausses de prix, plats sous la marge, ingrédients sans prix, un fournisseur moins cher, températures hors plage…</p>
+<p>Cliquez sur une alerte pour aller droit à l&#x27;endroit où agir.</p><figure><img src="img/fr/13-tauler.webp" alt="Image 14: Le tableau de bord" loading="lazy"></figure></section><section id="s15"><h2><span class="n">15</span>Analyser l&#x27;activité</h2><p>Dans <b>Analyse</b> :</p>
+<ul>
+<li><b>Ingénierie de menu</b> : chaque plat est ⭐ étoile (se vend bien et rapporte), 🐴 cheval de labour, ❓ énigme ou 🐶 poids mort, avec la conduite à tenir.</li>
+<li><b>Food cost réel</b> entre deux inventaires, comparé au théorique : l&#x27;écart vient des pertes, des portions trop grandes ou du gaspillage.</li>
+<li><b>Évolution des prix</b> et <b>simulateur</b> (« si l&#x27;huile augmente de 20 %, quels plats perdent de la marge et à quel prix les vendre ? »).</li>
+<li><b>Compte de résultat</b> avec les charges fixes et le <b>seuil de rentabilité</b>.</li>
+</ul><figure><img src="img/fr/14-enginyeria.webp" alt="Image 15: Analyser l&#x27;activité" loading="lazy"></figure></section><section id="s16"><h2><span class="n">16</span>La carte et les allergènes</h2><p>Dans <b>Carte et allergènes</b> :</p>
+<ul>
+<li><b>Carte</b> imprimable en trois styles (classique, moderne, ardoise), avec allergènes et descriptions.</li>
+<li><b>Tableau des 14 allergènes</b> (règlement UE 1169/2011), obligatoire et calculé automatiquement d&#x27;après les recettes.</li>
+<li><b>Carte QR</b> : enregistrez la <b>carte numérique</b> (une page mobile en 4 langues avec filtre d&#x27;allergènes), publiez-la sur votre site et imprimez les cartes QR pour les tables.</li>
+</ul><figure><img src="img/fr/15-carta.webp" alt="Image 16: La carte et les allergènes" loading="lazy"></figure></section><section id="s17"><h2><span class="n">17</span>Le menu du jour</h2><p>Dans <b>Menu du jour</b>, saisissez entrées, plats et desserts (ou choisissez-les parmi les recettes) et le prix. Si le nom correspond à une recette, le programme calcule le <b>coût par couvert</b>, le <b>food cost</b>, la <b>marge</b> et le <b>prix conseillé</b>.</p>
+<p>Indiquez le nombre de couverts attendus et cliquez sur <b>Ajouter à la production</b> : vous saurez quoi préparer et quoi acheter. Imprimez-le pour l&#x27;ardoise ou les tables.</p><figure><img src="img/fr/16-menu.webp" alt="Image 17: Le menu du jour" loading="lazy"></figure></section><section id="s18"><h2><span class="n">18</span>Le HACCP</h2><p>Dans <b>HACCP</b>, relevez chaque jour les <b>températures</b> des frigos et congélateurs (hors plage, une action corrective est demandée), imprimez le registre du mois pour l&#x27;inspection et créez des <b>étiquettes de production</b> avec date, DLC, lot et allergènes.</p>
+<p>Dans l&#x27;onglet <b>Équipements</b>, ajoutez chaque frigo avec sa plage correcte.</p><figure><img src="img/fr/18-appcc.webp" alt="Image 18: Le HACCP" loading="lazy"></figure></section><section id="s19"><h2><span class="n">19</span>Astuces pour aller vite</h2><ul>
+<li><b>Ctrl + K</b> : cherchez un plat, un ingrédient ou un fournisseur, ou lancez une action (« faire l&#x27;inventaire », « nouvel achat »…).</li>
+<li><b>N</b> : crée un nouvel élément sur l&#x27;écran en cours. <b>/</b> : va à la recherche.</li>
+<li><b>Ctrl + Z</b> : annule la dernière modification (aussi depuis l&#x27;avis en bas à droite).</li>
+<li><b>Ctrl + 1…9</b> : change d&#x27;écran. <b>Échap</b> : ferme le panneau.</li>
+<li>Les données sont dans <b>%APPDATA%\XoriguerGastro</b> avec une <b>sauvegarde automatique chaque jour</b> (30 jours). Dans <b>Réglages</b>, vous pouvez en exporter ou en restaurer une.</li>
+</ul><figure><img src="img/fr/19-paleta.webp" alt="Image 19: Astuces pour aller vite" loading="lazy"></figure></section>
+<section><h2><span class="n">✓</span>Liste de contrôle</h2><ul class="check"><li>Nom, adresse, TVA et marges visées dans Réglages</li><li>Fournisseurs créés</li><li>Ingrédients ajoutés depuis la base ou un CSV, avec prix, fournisseur et stock minimum</li><li>Plats ajoutés depuis la base ou créés, quantités vérifiées et prix de vente fixé</li><li>Allergènes vérifiés (tableau imprimé visible par les clients)</li><li>Premier inventaire fait</li><li>Frigos et congélateurs enregistrés dans le HACCP</li><li>Carte imprimée et/ou carte numérique avec QR sur les tables</li></ul></section>
+<div class="peu">Xoriguer Gastro · guide · v3.4</div></main>
+<script>document.addEventListener('click', (e) => { const f = e.target.closest('figure'); if (f) f.classList.toggle('gran'); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') document.querySelectorAll('figure.gran').forEach((f) => f.classList.remove('gran')); });</script>
+</body></html>
