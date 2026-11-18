@@ -2,7 +2,7 @@
 'use strict';
 (function (g) {
   const { h, ic, buida, btn, t } = UI;
-  const VERSIO = '3.4';
+  const VERSIO = '3.4.1';
   const V = (g.V = g.V || {}); // vistes registrades pels fitxers de vistes/
   const MENU = [
     ['Cuina', ['tauler', 'receptes', 'ingredients', 'produccio']],
@@ -21,6 +21,8 @@
     pinta(mantenScroll = false) {
       const [, vista = 'tauler', arg = null] = (location.hash || '#/tauler').split('/');
       const nom = V[vista] ? vista : 'tauler';
+      // Encara no hi ha dades (primer ús): totes les pantalles, menys l'ajuda, porten a la benvinguda
+      if (!Store.D && nom !== 'ajuda') { this.actual = ''; UI.tancaTot(); benvinguda(); this.menu(); return; }
       const el = document.getElementById('vista');
       const sc = mantenScroll && nom === this.actual ? el.scrollTop : 0;
       this.actual = nom; this.arg = arg ? decodeURIComponent(arg) : null;
@@ -52,7 +54,7 @@
 
   // ── Paleta d'ordres ───────────────────────────────────────────────────
   function paleta() {
-    if (document.querySelector('.paleta')) return;
+    if (document.querySelector('.paleta') || !Store.D) return; // sense dades encara (benvinguda)
     const D = Store.D;
     const vel = h('div.vel.p'), p = h('div.paleta');
     const i = h('input', { type: 'text', placeholder: t('Cerca plats, ingredients, proveïdors o accions…') });

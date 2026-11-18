@@ -4,7 +4,7 @@
 ; Les dades (%APPDATA%\XoriguerGastro) no s'esborren en desinstal·lar.
 ; ============================================================
 #ifndef MyAppVersion
-  #define MyAppVersion "3.4"
+  #define MyAppVersion "3.4.1"
 #endif
 #ifndef DistDir
   #define DistDir "..\build-escriptori\dist\XoriguerGastro"
