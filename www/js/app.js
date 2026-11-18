@@ -2,7 +2,7 @@
 'use strict';
 (function (g) {
   const { h, ic, buida, btn, t } = UI;
-  const VERSIO = '3.4.1';
+  const VERSIO = '3.5';
   const V = (g.V = g.V || {}); // vistes registrades pels fitxers de vistes/
   const MENU = [
     ['Cuina', ['tauler', 'receptes', 'ingredients', 'produccio']],
@@ -187,6 +187,7 @@
       document.getElementById('vista').appendChild(h('div.buit', h('h3', t('No es poden llegir les dades')), h('p', t('El fitxer de dades està malmès. Ves a Ajustos per restaurar una còpia automàtica.'))));
       Store.D = GL.buides(); App.ves('ajustos'); return;
     }
+    if (!CAPT) Actualitza.inicia(); // comprova si hi ha versió nova (un cop al dia)
     if (!D0) { App.menu(); benvinguda(); return; }
     if (CAPT) {
       const r = Q.get('ruta') || 'tauler';

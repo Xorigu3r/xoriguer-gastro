@@ -868,6 +868,25 @@
     ["dins de l'app (Android)", "dentro de la app (Android)", "dans l'application (Android)", "inside the app (Android)"],
     ["A la tauleta les dades es guarden dins de l'app. Exporta'n una còpia de seguretat de tant en tant (a Drive, al correu…).", "En la tableta los datos se guardan dentro de la app. Exporta una copia de seguridad de vez en cuando (a Drive, al correo…).", "Sur la tablette, les données sont gardées dans l'application. Exportez-en une sauvegarde de temps en temps (Drive, e-mail…).", "On the tablet, data is kept inside the app. Export a backup now and then (to Drive, email…)."],
     ["No s'ha pogut fer el codi QR.", "No se ha podido hacer el código QR.", "Impossible de créer le code QR.", "Couldn't make the QR code."],
+      // ── Actualitzacions ──
+    ["Actualitzacions", "Actualizaciones", "Mises à jour", "Updates"],
+    ["Busca actualitzacions", "Buscar actualizaciones", "Rechercher des mises à jour", "Check for updates"],
+    ["Buscant…", "Buscando…", "Recherche…", "Checking…"],
+    ["No s'ha pogut comprovar (sense connexió?)", "No se ha podido comprobar (¿sin conexión?)", "Vérification impossible (pas de connexion ?)", "Couldn't check (no connection?)"],
+    ["Versió nova: {v}", "Versión nueva: {v}", "Nouvelle version : {v}", "New version: {v}"],
+    ["Ja tens la versió més nova.", "Ya tienes la versión más reciente.", "Vous avez déjà la dernière version.", "You already have the latest version."],
+    ["Ja tens la versió més nova ({v}).", "Ya tienes la versión más reciente ({v}).", "Vous avez déjà la dernière version ({v}).", "You already have the latest version ({v})."],
+    ["Actualitzar a la {v}", "Actualizar a la {v}", "Mettre à jour vers la {v}", "Update to {v}"],
+    ["Tens la versió {v}.", "Tienes la versión {v}.", "Vous avez la version {v}.", "You have version {v}."],
+    ["A Windows es baixa l'instal·lador i s'instal·la a sobre: les dades no es toquen.", "En Windows se descarga el instalador y se instala encima: los datos no se tocan.", "Sous Windows, le programme d'installation est téléchargé et s'installe par-dessus : les données sont conservées.", "On Windows the installer is downloaded and installs over the old one: your data stays."],
+    ["A la tauleta es baixa l'APK nova i s'instal·la a sobre: les dades no es toquen.", "En la tableta se descarga el APK nuevo y se instala encima: los datos no se tocan.", "Sur la tablette, le nouvel APK est téléchargé et s'installe par-dessus : les données sont conservées.", "On the tablet the new APK is downloaded and installs over the old one: your data stays."],
+    ["S'obre la pàgina de baixades (xoriguer.dev).", "Se abre la página de descargas (xoriguer.dev).", "La page de téléchargement s'ouvre (xoriguer.dev).", "The download page opens (xoriguer.dev)."],
+    ["Comprova-ho sol un cop al dia", "Comprobarlo solo una vez al día", "Vérifier automatiquement une fois par jour", "Check automatically once a day"],
+    ["Hi ha una versió nova de Xoriguer Gastro: {v} (tens la {a}).", "Hay una versión nueva de Xoriguer Gastro: {v} (tienes la {a}).", "Une nouvelle version de Xoriguer Gastro est disponible : {v} (vous avez la {a}).", "A new version of Xoriguer Gastro is available: {v} (you have {a})."],
+    ["Baixant la versió {v}…", "Descargando la versión {v}…", "Téléchargement de la version {v}…", "Downloading version {v}…"],
+    ["S'obre l'instal·lador. Tanca Xoriguer Gastro quan t'ho demani: les dades es mantenen.", "Se abre el instalador. Cierra Xoriguer Gastro cuando te lo pida: los datos se mantienen.", "Le programme d'installation s'ouvre. Fermez Xoriguer Gastro quand il le demande : les données sont conservées.", "The installer opens. Close Xoriguer Gastro when asked: your data stays."],
+    ["No s'ha pogut baixar l'actualització", "No se ha podido descargar la actualización", "Impossible de télécharger la mise à jour", "Couldn't download the update"],
+    ["S'està baixant l'APK nova: obre-la per instal·lar-la a sobre (les dades es mantenen).", "Se está descargando el APK nuevo: ábrelo para instalarlo encima (los datos se mantienen).", "Le nouvel APK est en cours de téléchargement : ouvrez-le pour l'installer par-dessus (les données sont conservées).", "The new APK is downloading: open it to install over the old one (your data stays)."],
   ];
   const TR = { es: {}, fr: {}, en: {} };
   const n = (s) => s.replace(/\s+/g, ' ').trim();

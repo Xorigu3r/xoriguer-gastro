@@ -413,7 +413,7 @@ for ll, (titol, sub, pas, index, check, peu, imatge) in CAP.items():
 <div class="cap"><img src="../img/icona-256.png" alt=""><div class="lema">Xoriguer Gastro · {LEMA[ll]}</div><h1>{html.escape(titol)}</h1><p>{html.escape(sub)}</p><div class="barra"></div></div>
 <main><nav><b>{index}</b>{nav}</nav>{secc}
 <section><h2><span class="n">✓</span>{html.escape(check)}</h2><ul class="check">{chk}</ul></section>
-<div class="peu">{peu} · v3.4</div></main>
+<div class="peu">{peu} · v3.5</div></main>
 <script>document.addEventListener('click', (e) => {{ const f = e.target.closest('figure'); if (f) f.classList.toggle('gran'); }});
 document.addEventListener('keydown', (e) => {{ if (e.key === 'Escape') document.querySelectorAll('figure.gran').forEach((f) => f.classList.remove('gran')); }});</script>
 </body></html>"""

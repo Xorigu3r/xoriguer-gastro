@@ -239,9 +239,12 @@
     const v = await modal(titol, camp(etiqueta, i), [{ t: 'Cancel·lar', v: null }, { t: 'Acceptar', v: 1, pri: true }]);
     return v ? (esNum ? g.GL.num(i.value, NaN) : i.value.trim()) : null;
   }
-  function toast(text, { tipus = '', desfer, ms = 4200 } = {}) {
+  function toast(text, { tipus = '', desfer, accio, ms = 4200 } = {}) {
     const z = document.getElementById('toasts');
-    const el = h('div.toast' + (tipus ? '.' + tipus : ''), h('span', t(text)), desfer ? h('button', { onclick: () => { desfer(); el.remove(); } }, t('Desfer')) : null);
+    const el = h('div.toast' + (tipus ? '.' + tipus : ''), h('span', t(text)),
+      desfer ? h('button', { onclick: () => { desfer(); el.remove(); } }, t('Desfer')) : null,
+      accio ? h('button', { onclick: () => { el.remove(); accio.fn(); } }, accio.t) : null,
+      accio ? h('button', { title: t('Tancar'), style: { color: 'var(--suau)' }, onclick: () => el.remove() }, '✕') : null);
     z.appendChild(el);
     setTimeout(() => el.remove(), desfer ? ms + 3000 : ms);
   }

@@ -81,6 +81,30 @@ class Api(ApiBase):
             os.startfile(str(cami))
         return True
 
+    def actualitza(self, url, sha256=''):
+        """Baixa l'instal·lador nou de baixades.xoriguer.dev, en comprova el sha256 i l'obre (s'instal·la a sobre)."""
+        import hashlib
+        import tempfile
+        import urllib.request
+        from urllib.parse import urlparse
+        if urlparse(url).scheme != 'https' or not urlparse(url).hostname.endswith('xoriguer.dev'):
+            raise ValueError('Adreça no permesa')
+        nom = Path(urlparse(url).path).name
+        if not nom.lower().endswith('.exe'):
+            raise ValueError('No és un instal·lador')
+        desti = Path(tempfile.gettempdir()) / nom
+        req = urllib.request.Request(url, headers={'User-Agent': UA + ' XoriguerGastro'})
+        h = hashlib.sha256()
+        with urllib.request.urlopen(req, timeout=60) as r, open(desti, 'wb') as f:
+            for bloc in iter(lambda: r.read(1 << 20), b''):
+                f.write(bloc)
+                h.update(bloc)
+        if sha256 and h.hexdigest().lower() != sha256.lower():
+            desti.unlink(missing_ok=True)
+            raise ValueError("L'instal·lador baixat no coincideix (sha256)")
+        os.startfile(str(desti))
+        return True
+
     def obre(self, url):
         if url.lower().startswith(('https://', 'mailto:')):
             os.startfile(url)

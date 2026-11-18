@@ -54,6 +54,22 @@
             Store.canvi('Còpia restaurada', () => { Store.D = GL.completa(JSON.parse(txt)); }); App.refresca();
           } }, '⟲ ', c.replace('dades_', '').replace('.json', ''))))) : null));
 
+      // Actualitzacions
+      const estatAct = h('span.suau.petit');
+      const bAct = btn('Busca actualitzacions', async () => {
+        bAct.disabled = true; estatAct.textContent = t('Buscant…');
+        const r = await Actualitza.busca(true);
+        bAct.disabled = false;
+        estatAct.textContent = !r ? t('No s\'ha pogut comprovar (sense connexió?)') : r.nova ? t('Versió nova: {v}', { v: r.v.versio }) : t('Ja tens la versió més nova.');
+        if (r && r.nova) estatAct.after(btn(t('Actualitzar a la {v}', { v: r.v.versio }), () => Actualitza.instal_la(r.v), 'pri', 'baixa'));
+      }, 'pri', 'desfer');
+      el.append(h('div.targeta', { style: { marginTop: '14px' } }, h('h3', ic('baixa'), t('Actualitzacions')),
+        h('p.suau.petit', t('Tens la versió {v}.', { v: App.VERSIO }) + ' ' + (Store.plataforma === 'windows' ? t('A Windows es baixa l\'instal·lador i s\'instal·la a sobre: les dades no es toquen.')
+          : Store.plataforma === 'android' ? t('A la tauleta es baixa l\'APK nova i s\'instal·la a sobre: les dades no es toquen.') : t('S\'obre la pàgina de baixades (xoriguer.dev).'))),
+        h('div', { style: { display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' } }, bAct, estatAct),
+        h('label', { style: { display: 'flex', gap: '8px', alignItems: 'center', marginTop: '10px' } },
+          h('input', { type: 'checkbox', checked: Actualitza.auto, onchange: (e) => { Actualitza.auto = e.target.checked; } }), t('Comprova-ho sol un cop al dia'))));
+
       el.append(h('div.targeta', { style: { marginTop: '14px', borderColor: 'rgba(229,83,61,.5)' } }, h('h3.vermell', ic('alerta'), t('Zona perillosa')),
         h('div', { style: { display: 'flex', gap: '8px' } },
           btn('Carregar les dades d\'exemple', async () => { if (await UI.confirma('Se substituiran totes les dades per les d\'exemple. Es pot desfer.', 'Carregar', true)) { Store.canvi('Dades d\'exemple', () => { Store.D = GL.exemple(); }); App.refresca(); } }, ''),
